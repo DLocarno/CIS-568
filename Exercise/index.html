@@ -3,18 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Form </title>
+		<link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+<div id="form_info">
+	<header>
+		<h1>Sample Form</h1>
+	</header>
+	<p>Choose a topic, and research interest for the individual visualization project.</p>
+	<hr/>
+	<p id="email_account">JohnDoe@gmail.com</p>
+	<p id="notice">* Required</p>
+</div>
+
+<form action="/server_side.php" method="get">
+<div>
+	<label for="email">Email<span class="astrisk"> *</span></label><br>
+	<input type="text" id="email" name="email" placeholder="Your email">
+</div>
+
+<div>
+	<label for="fname">Firstname</label><br>
+	<input type="text" id="fname" name="fname" placeholder="Your answer">
+</div>
+
+<div>
+	<label for="lname">Lastname</label><br>
+	<input type="text" id="lname" name="lname" placeholder="Your answer">
+</div>
+
+<div>
+	<label for="research">Research Interest (list at least 3)<span class="astrisk"> *</span></label><br>
+	<textarea id="research" name="research" oninput='this.style.height = "";this.style.height = this.scrollHeight - 16 + "px"' placeholder="Your answer"></textarea>
+</div>
+
+<div>
+	<label for="title">Project Title - (e.g. income vs education US Census)<span class="astrisk"> *</span></label><br>
+	<textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight - 16 + "px"' placeholder="Your answer"></textarea>
+</div>
+
+<div id="checkbox">
+	<h2>Top Skills<span class="astrisk"> *</span></h2>
+	<input type="checkbox" id="skills1" name="skills1" value="SQL">
+	<label for="skills1">SQL</label><br/>
+	<input type="checkbox" id="skills2" name="skills2" value="Python">
+	<label for="skills2">Python Programming</label><br/>	
+	<input type="checkbox" id="skills3" name="skills3" value="Matlab">
+	<label for="skills3">Matlab</label></br>		
+	<input type="checkbox" id="skills4" name="skills4" value="D3JS">
+	<label for="skills4">D3js and Javascript</label></br>		
+	<input type="checkbox" id="skills5" name="skills5" value="C#VB">
+	<label for="skills5">C# VB.net</label></br>
+	<input type="checkbox" id="skills6" name="skills6" value="PHP">
+	<label for="skills6">PHP</label></br>
+	<input type="checkbox" id="skills7" name="skills7" value="NodeJS">
+	<label for="skills7">Node.JS</label></br>
+	<input type="checkbox" id="skills8" name="skills8" value="WebDesign">
+	<label for="skills8">Web design tools (e.g. Wordpress)</label></br>
+	<input type="checkbox" id="skills9" name="skills9" value="HTMLCSS">
+	<label for="skills9">HTML and CSS</label></br>
+	<input type="checkbox" id="skills10" name="skills10" value="Excel">
+	<label for="skills10">Excel</label></br>
+	<input type="checkbox" id="skills11" name="skills11" value="PowerBI">
+	<label for="skills11">PowerBI</label></br>
+	<input type="checkbox" id="skills12" name="skills12" value="Tableau">
+	<label for="skills12">Tableau</label></br>
+	<input type="checkbox" id="skills13" name="skills13" value="Option13">
+	<label for="skills13">Option 13</label></br>
+	<input type="checkbox" id="skills14" name="skills14" value="Other">
+	<label for="skills14">Other:</label>
+	<input type="text" id="other" name="other">
+	<h2></h2>
+</div>
+
+<div>
+	<label for="suggest">Suggestions or Questions</label><br>
+	<textarea id="suggest" name="suggest" oninput='this.style.height = "";this.style.height = this.scrollHeight - 16 + "px"' placeholder="Your answer"></textarea>
+</div>
+
+<div class="plain">
+	<input type="submit" value="Submit">
+	<p>Never submit passwords through Google Forms.</p>
+</div>
+
+</form>
+
 </body>
+
+<footer>
+By: David Locarno CIS 568 Last Edited: 2/14/2022
+</footer>
+
 </html>

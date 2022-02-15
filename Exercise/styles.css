@@ -1,0 +1,171 @@
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf);
+}
+
+body {
+	background-color: #f0ebf8;
+}
+
+div {
+	background-color: white;
+	margin: 0 auto;	/*center div containter */
+	margin-bottom: 1%;
+	max-width: 640px; /* Set max width of div (can shrink to fit, but won't exceed) */
+	min-height: 140px;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #dfe0e4
+}
+
+div.plain,
+div.plain p {
+	margin: 0 auto;
+	background-color: none;
+	border-style: none;
+	background-color: #f0ebf8;
+	font: Roboto-Regular;
+	color: dimgray;
+	font-size: 12px;
+}
+
+div.plain input {
+	margin-left: 0;
+	margin-bottom: 3%;
+}
+
+div h1 {
+	font-family: Roboto-Regular;
+	font-size: 36px;
+	font-weight: 400;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+div h2 {
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 4%;
+}
+
+div p {
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .2px;	
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+div hr {
+	border: none;
+	height: 1px;
+	background-color: #dfe0e4;
+}
+
+div label {	
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block; /* needed for adding top & botton margins to <label> tag because labels are in-line elements */ 
+	margin: 4%;
+}
+
+div input {
+	margin-left: 4%;
+}
+
+div textarea {
+	margin-left: 4%;
+	resize: none;   /* disables rid of resize arrow in textarea */
+	overflow: hidden; /* disables scrollbar in textarea */
+}
+
+textarea {
+	width: 92%;
+	height: 18px;
+	padding: 1%;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: #dfe0e4;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+}
+
+input[type=text] {
+	width: 45%;
+	padding: 1%;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: #dfe0e4;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+}
+
+input[type=text]:focus,
+textarea:focus {
+	outline: none;
+	border-bottom: solid;
+	border-width: 2px;
+	border-color: #673ab7;
+}
+
+input[type=checkbox] {
+  accent-color: #673ab7;
+  width: 20px;
+  height: 20px;
+}
+
+input[type=submit] {
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+	background-color: #673ab7;
+	width: 100px;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+}
+
+span.astrisk {
+	color: crimson;
+}
+
+div#form_info {
+	background: linear-gradient(to bottom, #673ab7 0% 5%, white 5% 100%);
+}
+
+p#notice {
+	color: crimson;
+}
+
+p#email_account {
+	font-weight: 800;
+	color: dimgray;
+}
+
+input#other {
+	width: 70%;
+	display: inline;
+}
+
+div#checkbox label{
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-weight: 400;
+	display: inline-block; /* needed for adding top & botton margins to <label> tag because labels are in-line elements */ 
+	margin: 1%;
+}
+
+
+
